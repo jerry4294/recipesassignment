@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Recipes</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Recipe List</h2>
+      <ul id="recipes"></ul>
+    </section>
+
+    <section id="recipe-details" class="hidden">
+      <article>
+        <h2 id="recipe-name"></h2>
+        <img id="recipe-image" src="" alt="Recipe Image">
+        <p id="recipe-description"></p>
+
+        <h3>Preparation Details</h3>
+        <ul>
+          <li><strong>Preparation Time:</strong><span id="prep-time"></span></li>
+          <li><strong>Cooking Time:</strong><span id="cook-time"></span></li>
+          <li><strong>Servings:</strong><span id="servings"></span></li>
+          <li><strong>Difficulty:</strong><span id="difficulty"></span></li>
+        </ul>
+
+        <h3>Nutritional Information</h3>
+        <ul>
+          <li><strong>Calories:</strong><span id="calories"></span></li>
+          <li><strong>Protein:</strong><span id="protein"></span></li>
+          <li><strong>Carbohydrates:</strong><span id="carbohydrates"></span></li>
+          <li><strong>Fat:</strong><span id="fat"></span></li>
+        </ul>
+
+        <h3>Tags</h3>
+        <ul id="tag-list"></ul>
+
+        <h3>Ingredients</h3>
+        <ul id="ingredients-list"></ul>
+
+        <h3>Instructions</h3>
+        <ul id="instructions-list"></ul>
+
+        <button id="double-servings">Double Servings</button>
+        <button id="convert-units">Convert Units</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Recipes. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
